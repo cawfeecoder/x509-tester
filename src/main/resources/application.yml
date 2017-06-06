@@ -1,0 +1,15 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:jks/server-keystore.jks
+    key-store-password: server-keystore-p455w0rd
+    key-alias: server-keypair
+    key-password: server-key-p455w0rd
+    trust-store: classpath:jks/client-truststore.jks
+    trust-store-password: client-truststore-p455w0rd
+    enabled: true
+security:
+  user:
+    name: Admin
+    password: Admin
+
